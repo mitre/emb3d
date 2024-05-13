@@ -2,7 +2,7 @@ var threatData;
 
 //Load the json file that contains the threat and device properties mapping
 window.onload = (event) => {
-  fetch('../_data/deviceprops.json')
+  fetch('/assets/deviceprops.json')
     .then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
