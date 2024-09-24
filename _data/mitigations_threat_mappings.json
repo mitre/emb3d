@@ -1,0 +1,1440 @@
+{
+    "mitigations": [
+        {
+            "id": "MID-001",
+            "name": "Software Only Bootloader Authentication",
+            "text": "Software Only Bootloader Authentication",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-201",
+                    "text": "Inadequate Bootloader Protection and Verification"
+                },
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                },
+                {
+                    "id": "TID-211",
+                    "text": "Device Allows Unauthenticated Firmware Installation"
+                },
+                {
+                    "id": "TID-213",
+                    "text": "Faulty FW/SW Update Integrity Verification"
+                },
+                {
+                    "id": "TID-218",
+                    "text": "Operating System Susceptible to Rootkit"
+                },
+                {
+                    "id": "TID-301",
+                    "text": "Applications Binaries Modified"
+                }
+            ]
+        },
+        {
+            "id": "MID-002",
+            "name": "Hardware-backed Bootloader Authentication",
+            "text": "Hardware-backed Bootloader Authentication",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-201",
+                    "text": "Inadequate Bootloader Protection and Verification"
+                },
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                },
+                {
+                    "id": "TID-211",
+                    "text": "Device Allows Unauthenticated Firmware Installation"
+                },
+                {
+                    "id": "TID-213",
+                    "text": "Faulty FW/SW Update Integrity Verification"
+                },
+                {
+                    "id": "TID-218",
+                    "text": "Operating System Susceptible to Rootkit"
+                },
+                {
+                    "id": "TID-301",
+                    "text": "Applications Binaries Modified"
+                }
+            ]
+        },
+        {
+            "id": "MID-003",
+            "name": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+            "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-201",
+                    "text": "Inadequate Bootloader Protection and Verification"
+                },
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                },
+                {
+                    "id": "TID-213",
+                    "text": "Faulty FW/SW Update Integrity Verification"
+                },
+                {
+                    "id": "TID-218",
+                    "text": "Operating System Susceptible to Rootkit"
+                },
+                {
+                    "id": "TID-301",
+                    "text": "Applications Binaries Modified"
+                },
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                }
+            ]
+        },
+        {
+            "id": "MID-004",
+            "name": "Memory Hardening Against Code Injection",
+            "text": "Memory Hardening Against Code Injection",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                },
+                {
+                    "id": "TID-219",
+                    "text": "OS/Kernel Privilege Escalation"
+                },
+                {
+                    "id": "TID-327",
+                    "text": "Out of Bounds Memory Access"
+                }
+            ]
+        },
+        {
+            "id": "MID-005",
+            "name": "Memory Safe Programming Languages",
+            "text": "Memory Safe Programming Languages",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                },
+                {
+                    "id": "TID-219",
+                    "text": "OS/Kernel Privilege Escalation"
+                },
+                {
+                    "id": "TID-327",
+                    "text": "Out of Bounds Memory Access"
+                }
+            ]
+        },
+        {
+            "id": "MID-006",
+            "name": "Driver Memory Isolation",
+            "text": "Driver Memory Isolation",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-327",
+                    "text": "Out of Bounds Memory Access"
+                }
+            ]
+        },
+        {
+            "id": "MID-007",
+            "name": "Control Flow Manipulation Protections",
+            "text": "Control Flow Manipulation Protections",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                }
+            ]
+        },
+        {
+            "id": "MID-008",
+            "name": "Decidable Protocols and Parsers",
+            "text": "Decidable Protocols and Parsers",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-309",
+                    "text": "Device Exploits Engineering Workstation"
+                },
+                {
+                    "id": "TID-404",
+                    "text": "Remotely Triggerable Deadlock/DoS"
+                },
+                {
+                    "id": "TID-405",
+                    "text": "Network Stack Resource Exhaustion"
+                }
+            ]
+        },
+        {
+            "id": "MID-009",
+            "name": "Operating System-based Runtime Integrity Check",
+            "text": "Operating System-based Runtime Integrity Check",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                },
+                {
+                    "id": "TID-218",
+                    "text": "Operating System Susceptible to Rootkit"
+                },
+                {
+                    "id": "TID-301",
+                    "text": "Applications Binaries Modified"
+                },
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                }
+            ]
+        },
+        {
+            "id": "MID-010",
+            "name": "No Runtime OS Driver Load",
+            "text": "No Runtime OS Driver Load",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                }
+            ]
+        },
+        {
+            "id": "MID-011",
+            "name": "OS Driver/Peripheral Authentication",
+            "text": "OS Driver/Peripheral Authentication",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-203",
+                    "text": "Malicious OS Kernel Driver/Module Installable"
+                },
+                {
+                    "id": "TID-113",
+                    "text": "Unverified Peripheral Firmware Loaded"
+                }
+            ]
+        },
+        {
+            "id": "MID-012",
+            "name": "OS-based Access Control Mechanisms",
+            "text": "OS-based Access Control Mechanisms",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-204",
+                    "text": "Untrusted Programs Can Access Privileged OS Functions"
+                },
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                },
+                {
+                    "id": "TID-219",
+                    "text": "OS/Kernel Privilege Escalation"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                },
+                {
+                    "id": "TID-305",
+                    "text": "Program Executes Dangerous System Calls"
+                },
+                {
+                    "id": "TID-306",
+                    "text": "Sandboxed Environments Escaped"
+                }
+            ]
+        },
+        {
+            "id": "MID-013",
+            "name": "Process and Thread Memory Segmentation",
+            "text": "Process and Thread Memory Segmentation",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-204",
+                    "text": "Untrusted Programs Can Access Privileged OS Functions"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                },
+                {
+                    "id": "TID-327",
+                    "text": "Out of Bounds Memory Access"
+                }
+            ]
+        },
+        {
+            "id": "MID-014",
+            "name": "Sandboxing",
+            "text": "Sandboxing",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-103",
+                    "text": "Cache Timing Analysis Side Channel"
+                },
+                {
+                    "id": "TID-110",
+                    "text": "Hardware Fault Injection – Data Manipulation"
+                },
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-204",
+                    "text": "Untrusted Programs Can Access Privileged OS Functions"
+                },
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                },
+                {
+                    "id": "TID-305",
+                    "text": "Program Executes Dangerous System Calls"
+                }
+            ]
+        },
+        {
+            "id": "MID-015",
+            "name": "Containerization",
+            "text": "Containerization",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-204",
+                    "text": "Untrusted Programs Can Access Privileged OS Functions"
+                },
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                },
+                {
+                    "id": "TID-305",
+                    "text": "Program Executes Dangerous System Calls"
+                }
+            ]
+        },
+        {
+            "id": "MID-016",
+            "name": "Least Functionality",
+            "text": "Least Functionality",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                }
+            ]
+        },
+        {
+            "id": "MID-017",
+            "name": "Security-relevant Auditing and Logging",
+            "text": "Security-relevant Auditing and Logging",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                },
+                {
+                    "id": "TID-308",
+                    "text": "Code Overwritten to Avoid Detection"
+                },
+                {
+                    "id": "TID-315",
+                    "text": "Password Retrieval Mechanism Abused"
+                },
+                {
+                    "id": "TID-412",
+                    "text": "Network Routing Capability Abuse"
+                }
+            ]
+        },
+        {
+            "id": "MID-018",
+            "name": "Require Authentication for Privileged Functions",
+            "text": "Require Authentication for Privileged Functions",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-205",
+                    "text": "Existing OS Tools Maliciously Used for Device Manipulation"
+                },
+                {
+                    "id": "TID-224",
+                    "text": "Excessive Access via Software Diagnostic Features"
+                },
+                {
+                    "id": "TID-412",
+                    "text": "Network Routing Capability Abuse"
+                }
+            ]
+        },
+        {
+            "id": "MID-019",
+            "name": "ROP Gadget Minimization",
+            "text": "ROP Gadget Minimization",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                }
+            ]
+        },
+        {
+            "id": "MID-020",
+            "name": "Pointer Authentication",
+            "text": "Pointer Authentication",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                }
+            ]
+        },
+        {
+            "id": "MID-021",
+            "name": "VM Hardening",
+            "text": "VM Hardening",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-208",
+                    "text": "Virtual Machine Escape"
+                }
+            ]
+        },
+        {
+            "id": "MID-022",
+            "name": "Segmentation Through Hardware-assisted VMs",
+            "text": "Segmentation Through Hardware-assisted VMs",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-207",
+                    "text": "Container Escape"
+                },
+                {
+                    "id": "TID-306",
+                    "text": "Sandboxed Environments Escaped"
+                }
+            ]
+        },
+        {
+            "id": "MID-023",
+            "name": "Hypervisor Hardening",
+            "text": "Hypervisor Hardening",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-208",
+                    "text": "Virtual Machine Escape"
+                },
+                {
+                    "id": "TID-209",
+                    "text": "Host Can Manipulate Guest Virtual Machines"
+                }
+            ]
+        },
+        {
+            "id": "MID-024",
+            "name": "Encrypted VM Isolation",
+            "text": "Encrypted VM Isolation",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-209",
+                    "text": "Host Can Manipulate Guest Virtual Machines"
+                }
+            ]
+        },
+        {
+            "id": "MID-025",
+            "name": "End-of-Life Management Features",
+            "text": "End-of-Life Management Features",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-210",
+                    "text": "Device Vulnerabilities Unpatchable"
+                }
+            ]
+        },
+        {
+            "id": "MID-026",
+            "name": "Secure Firmware Update",
+            "text": "Secure Firmware Update",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-210",
+                    "text": "Device Vulnerabilities Unpatchable"
+                },
+                {
+                    "id": "TID-211",
+                    "text": "Device Allows Unauthenticated Firmware Installation"
+                },
+                {
+                    "id": "TID-212",
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                },
+                {
+                    "id": "TID-213",
+                    "text": "Faulty FW/SW Update Integrity Verification"
+                },
+                {
+                    "id": "TID-215",
+                    "text": "Unencrypted SW/FW Updates"
+                },
+                {
+                    "id": "TID-217",
+                    "text": "Remotely Initiated Updates Can Cause DoS"
+                }
+            ]
+        },
+        {
+            "id": "MID-027",
+            "name": "Validated Cryptographic Libraries",
+            "text": "Validated Cryptographic Libraries",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-101",
+                    "text": "Power Consumption Analysis Side Channel"
+                },
+                {
+                    "id": "TID-102",
+                    "text": "Electromagnetic Analysis Side Channel"
+                },
+                {
+                    "id": "TID-213",
+                    "text": "Faulty FW/SW Update Integrity Verification"
+                },
+                {
+                    "id": "TID-316",
+                    "text": "Incorrect Certificate Verification Allows Authentication Bypass"
+                },
+                {
+                    "id": "TID-318",
+                    "text": "Insecure Cryptographic Implementation"
+                },
+                {
+                    "id": "TID-330",
+                    "text": "Cryptographic Timing Side-Channel"
+                }
+            ]
+        },
+        {
+            "id": "MID-028",
+            "name": "Hardware-backed Key Storage",
+            "text": "Hardware-backed Key Storage",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-214",
+                    "text": "Secrets Extracted from Device Root of Trust"
+                }
+            ]
+        },
+        {
+            "id": "MID-029",
+            "name": "Hardware Root of Trust",
+            "text": "Hardware Root of Trust",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-201",
+                    "text": "Inadequate Bootloader Protection and Verification"
+                }
+            ]
+        },
+        {
+            "id": "MID-030",
+            "name": "Firmware Rollback Protections",
+            "text": "Firmware Rollback Protections",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-216",
+                    "text": "Firmware Update Rollbacks Allowed"
+                }
+            ]
+        },
+        {
+            "id": "MID-031",
+            "name": "Physical Presence Validation",
+            "text": "Physical Presence Validation",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-217",
+                    "text": "Remotely Initiated Updates Can Cause DoS"
+                },
+                {
+                    "id": "TID-222",
+                    "text": "Critical System Service May Be Disabled"
+                },
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                },
+                {
+                    "id": "TID-412",
+                    "text": "Network Routing Capability Abuse"
+                }
+            ]
+        },
+        {
+            "id": "MID-032",
+            "name": "System Service Availability Manager",
+            "text": "System Service Availability Manager",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-217",
+                    "text": "Remotely Initiated Updates Can Cause DoS"
+                },
+                {
+                    "id": "TID-222",
+                    "text": "Critical System Service May Be Disabled"
+                },
+                {
+                    "id": "TID-404",
+                    "text": "Remotely Triggerable Deadlock/DoS"
+                },
+                {
+                    "id": "TID-405",
+                    "text": "Network Stack Resource Exhaustion"
+                }
+            ]
+        },
+        {
+            "id": "MID-033",
+            "name": "Unique Factory Preinstalled Secret Keys",
+            "text": "Unique Factory Preinstalled Secret Keys",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-212",
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                },
+                {
+                    "id": "TID-220",
+                    "text": "Unpatchable Hardware Root of Trust"
+                },
+                {
+                    "id": "TID-317",
+                    "text": "Predictable Cryptographic Key"
+                }
+            ]
+        },
+        {
+            "id": "MID-034",
+            "name": "Authenticate Network Messages",
+            "text": "Authenticate Network Messages",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-310",
+                    "text": "Remotely Accessible Unauthenticated Services"
+                },
+                {
+                    "id": "TID-406",
+                    "text": "Unauthorized Messages or Connections"
+                }
+            ]
+        },
+        {
+            "id": "MID-035",
+            "name": "Encrypt Network Traffic",
+            "text": "Encrypt Network Traffic",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-321",
+                    "text": "HTTP Application Session Hijacking"
+                },
+                {
+                    "id": "TID-408",
+                    "text": "Unencrypted Sensitive Data Communication"
+                }
+            ]
+        },
+        {
+            "id": "MID-036",
+            "name": "Cryptographic Nonces",
+            "text": "Cryptographic Nonces",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-221",
+                    "text": "Authentication Bypass By Message Replay"
+                },
+                {
+                    "id": "TID-407",
+                    "text": "Missing Message Replay Protection"
+                }
+            ]
+        },
+        {
+            "id": "MID-037",
+            "name": "Network Timestamps",
+            "text": "Network Timestamps",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-221",
+                    "text": "Authentication Bypass By Message Replay"
+                },
+                {
+                    "id": "TID-407",
+                    "text": "Missing Message Replay Protection"
+                }
+            ]
+        },
+        {
+            "id": "MID-038",
+            "name": "Authenticate for Administrative Actions",
+            "text": "Authenticate for Administrative Actions",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-222",
+                    "text": "Critical System Service May Be Disabled"
+                },
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                },
+                {
+                    "id": "TID-312",
+                    "text": "Credential Change Mechanism Can Be Abused"
+                },
+                {
+                    "id": "TID-313",
+                    "text": "Unauthenticated Session Changes Credential"
+                },
+                {
+                    "id": "TID-412",
+                    "text": "Network Routing Capability Abuse"
+                }
+            ]
+        },
+        {
+            "id": "MID-039",
+            "name": "Restrict Software Diagnostic Functions",
+            "text": "Restrict Software Diagnostic Functions",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-224",
+                    "text": "Excessive Access via Software Diagnostic Features"
+                }
+            ]
+        },
+        {
+            "id": "MID-040",
+            "name": "Cryptographically Signed Custom Programs",
+            "text": "Cryptographically Signed Custom Programs",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                }
+            ]
+        },
+        {
+            "id": "MID-041",
+            "name": "Cryptographically Signed Vendor-supplied Programs",
+            "text": "Cryptographically Signed Vendor-supplied Programs",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                },
+                {
+                    "id": "TID-303",
+                    "text": "Excessive Trust in Offboard Management/IDE Software"
+                }
+            ]
+        },
+        {
+            "id": "MID-042",
+            "name": "Device Checks Consistency Between Binary/Running Code and Textual Code",
+            "text": "Device Checks Consistency Between Binary/Running Code and Textual Code",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-303",
+                    "text": "Excessive Trust in Offboard Management/IDE Software"
+                },
+                {
+                    "id": "TID-307",
+                    "text": "Device Code Representations Inconsistent"
+                }
+            ]
+        },
+        {
+            "id": "MID-043",
+            "name": "Manage Default Login Credentials",
+            "text": "Manage Default Login Credentials",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-311",
+                    "text": "Default Credentials"
+                },
+                {
+                    "id": "TID-328",
+                    "text": "Hardcoded Credentials"
+                }
+            ]
+        },
+        {
+            "id": "MID-044",
+            "name": "Strong Cryptographic Algorithms and Protocols",
+            "text": "Strong Cryptographic Algorithms and Protocols",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-330",
+                    "text": "Cryptographic Timing Side-Channel"
+                },
+                {
+                    "id": "TID-410",
+                    "text": "Cryptographic Protocol Side Channel"
+                },
+                {
+                    "id": "TID-411",
+                    "text": "Weak/Insecure Cryptographic Protocol"
+                }
+            ]
+        },
+        {
+            "id": "MID-045",
+            "name": "Multi-factor Authentication",
+            "text": "Multi-factor Authentication",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-314",
+                    "text": "Passwords Can Be Guessed Using Brute-Force Attempts"
+                }
+            ]
+        },
+        {
+            "id": "MID-046",
+            "name": "Authentication Attempts Timeouts and Lockouts",
+            "text": "Authentication Attempts Timeouts and Lockouts",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-314",
+                    "text": "Passwords Can Be Guessed Using Brute-Force Attempts"
+                }
+            ]
+        },
+        {
+            "id": "MID-047",
+            "name": "Sufficient Entropy for Keys",
+            "text": "Sufficient Entropy for Keys",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-317",
+                    "text": "Predictable Cryptographic Key"
+                }
+            ]
+        },
+        {
+            "id": "MID-048",
+            "name": "Hardware Random Number Generator",
+            "text": "Hardware Random Number Generator",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-317",
+                    "text": "Predictable Cryptographic Key"
+                }
+            ]
+        },
+        {
+            "id": "MID-049",
+            "name": "Secure Password Storage",
+            "text": "Secure Password Storage",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-329",
+                    "text": "Improper Password Storage"
+                }
+            ]
+        },
+        {
+            "id": "MID-050",
+            "name": "Operating System Defenses Against Microarchitecture Feature Side Channels",
+            "text": "Operating System Defenses Against Microarchitecture Feature Side Channels",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-103",
+                    "text": "Cache Timing Analysis Side Channel"
+                }
+            ]
+        },
+        {
+            "id": "MID-051",
+            "name": "Disallow User-Provided Code",
+            "text": "Disallow User-Provided Code",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-103",
+                    "text": "Cache Timing Analysis Side Channel"
+                },
+                {
+                    "id": "TID-110",
+                    "text": "Hardware Fault Injection – Data Manipulation"
+                },
+                {
+                    "id": "TID-302",
+                    "text": "Install Untrusted Application"
+                }
+            ]
+        },
+        {
+            "id": "MID-052",
+            "name": "Physically Protect Circuit Board Traces and Chip Pins",
+            "text": "Physically Protect Circuit Board Traces and Chip Pins",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-106",
+                    "text": "Data Bus Interception"
+                },
+                {
+                    "id": "TID-108",
+                    "text": "ROM/NVRAM Data Extraction or Modification"
+                },
+                {
+                    "id": "TID-109",
+                    "text": "RAM Chip Contents Readout"
+                },
+                {
+                    "id": "TID-114",
+                    "text": "Peripheral Data Bus Interception"
+                }
+            ]
+        },
+        {
+            "id": "MID-053",
+            "name": "Use IOMMU to Implement DMA Access Controls",
+            "text": "Use IOMMU to Implement DMA Access Controls",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-107",
+                    "text": "Unauthorized Direct Memory Access (DMA)"
+                }
+            ]
+        },
+        {
+            "id": "MID-054",
+            "name": "Encrypt and Authenticate Non-volatile Storage Contents",
+            "text": "Encrypt and Authenticate Non-volatile Storage Contents",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-106",
+                    "text": "Data Bus Interception"
+                },
+                {
+                    "id": "TID-108",
+                    "text": "ROM/NVRAM Data Extraction or Modification"
+                }
+            ]
+        },
+        {
+            "id": "MID-055",
+            "name": "Use Highly Integrated Processors to Avoid Physical Attacks",
+            "text": "Use Highly Integrated Processors to Avoid Physical Attacks",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-109",
+                    "text": "RAM Chip Contents Readout"
+                },
+                {
+                    "id": "TID-106",
+                    "text": "Data Bus Interception"
+                },
+                {
+                    "id": "TID-108",
+                    "text": "ROM/NVRAM Data Extraction or Modification"
+                },
+                {
+                    "id": "TID-114",
+                    "text": "Peripheral Data Bus Interception"
+                }
+            ]
+        },
+        {
+            "id": "MID-056",
+            "name": "Allow Device Administrators to Disable Removable Storage Support",
+            "text": "Allow Device Administrators to Disable Removable Storage Support",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-111",
+                    "text": "Untrusted External Storage"
+                }
+            ]
+        },
+        {
+            "id": "MID-057",
+            "name": "Disable Physical Development and Debugging Ports",
+            "text": "Disable Physical Development and Debugging Ports",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-115",
+                    "text": "Firmware/Data Extraction via Hardware Interface"
+                },
+                {
+                    "id": "TID-116",
+                    "text": "Latent Privileged Access Port"
+                },
+                {
+                    "id": "TID-119",
+                    "text": "Latent Hardware Debug Port Allows Memory/Code Manipulation"
+                }
+            ]
+        },
+        {
+            "id": "MID-058",
+            "name": "Engage Hardware Readout Protection Mechanisms",
+            "text": "Engage Hardware Readout Protection Mechanisms",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-115",
+                    "text": "Firmware/Data Extraction via Hardware Interface"
+                },
+                {
+                    "id": "TID-119",
+                    "text": "Latent Hardware Debug Port Allows Memory/Code Manipulation"
+                }
+            ]
+        },
+        {
+            "id": "MID-059",
+            "name": "Software Patterns for Side Channel Resistance",
+            "text": "Software Patterns for Side Channel Resistance",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-101",
+                    "text": "Power Consumption Analysis Side Channel"
+                },
+                {
+                    "id": "TID-102",
+                    "text": "Electromagnetic Analysis Side Channel"
+                }
+            ]
+        },
+        {
+            "id": "MID-060",
+            "name": "Dedicated Hardware Cryptographic Modules",
+            "text": "Dedicated Hardware Cryptographic Modules",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-101",
+                    "text": "Power Consumption Analysis Side Channel"
+                },
+                {
+                    "id": "TID-102",
+                    "text": "Electromagnetic Analysis Side Channel"
+                },
+                {
+                    "id": "TID-214",
+                    "text": "Secrets Extracted from Device Root of Trust"
+                },
+                {
+                    "id": "TID-317",
+                    "text": "Predictable Cryptographic Key"
+                },
+                {
+                    "id": "TID-318",
+                    "text": "Insecure Cryptographic Implementation"
+                }
+            ]
+        },
+        {
+            "id": "MID-061",
+            "name": "Use Separate Processors for Isolation",
+            "text": "Use Separate Processors for Isolation",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-103",
+                    "text": "Cache Timing Analysis Side Channel"
+                }
+            ]
+        },
+        {
+            "id": "MID-062",
+            "name": "Hardware Mitigations for Fault Injection",
+            "text": "Hardware Mitigations for Fault Injection",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-105",
+                    "text": "Hardware Fault Injection – Control Flow Modification"
+                }
+            ]
+        },
+        {
+            "id": "MID-063",
+            "name": "Software Mitigations for Fault Injection",
+            "text": "Software Mitigations for Fault Injection",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-105",
+                    "text": "Hardware Fault Injection – Control Flow Modification"
+                }
+            ]
+        },
+        {
+            "id": "MID-064",
+            "name": "Store Critical Code and Data in On-Chip Memory",
+            "text": "Store Critical Code and Data in On-Chip Memory",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-106",
+                    "text": "Data Bus Interception"
+                },
+                {
+                    "id": "TID-108",
+                    "text": "ROM/NVRAM Data Extraction or Modification"
+                }
+            ]
+        },
+        {
+            "id": "MID-065",
+            "name": "RAM Encryption",
+            "text": "RAM Encryption",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-106",
+                    "text": "Data Bus Interception"
+                },
+                {
+                    "id": "TID-107",
+                    "text": "Unauthorized Direct Memory Access (DMA)"
+                },
+                {
+                    "id": "TID-109",
+                    "text": "RAM Chip Contents Readout"
+                },
+                {
+                    "id": "TID-110",
+                    "text": "Hardware Fault Injection – Data Manipulation"
+                },
+                {
+                    "id": "TID-223",
+                    "text": "System Susceptible to RAM Scraping"
+                }
+            ]
+        },
+        {
+            "id": "MID-066",
+            "name": "Implement Redundant Processing and Memory",
+            "text": "Implement Redundant Processing and Memory",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-105",
+                    "text": "Hardware Fault Injection – Control Flow Modification"
+                },
+                {
+                    "id": "TID-110",
+                    "text": "Hardware Fault Injection – Data Manipulation"
+                }
+            ]
+        },
+        {
+            "id": "MID-067",
+            "name": "Implement DRAM RowHammer-resistant DRAM and Memory Controllers",
+            "text": "Implement DRAM RowHammer-resistant DRAM and Memory Controllers",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-110",
+                    "text": "Hardware Fault Injection – Data Manipulation"
+                }
+            ]
+        },
+        {
+            "id": "MID-068",
+            "name": "Data Bus Encryption and Message Authentication",
+            "text": "Data Bus Encryption and Message Authentication",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-114",
+                    "text": "Peripheral Data Bus Interception"
+                }
+            ]
+        },
+        {
+            "id": "MID-069",
+            "name": "Electrical Fault Protection",
+            "text": "Electrical Fault Protection",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-118",
+                    "text": "Weak Peripheral Port Electrical Damage Protection"
+                }
+            ]
+        },
+        {
+            "id": "MID-070",
+            "name": "Peripheral Component Authentication",
+            "text": "Peripheral Component Authentication",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-107",
+                    "text": "Unauthorized Direct Memory Access (DMA)"
+                },
+                {
+                    "id": "TID-113",
+                    "text": "Unverified Peripheral Firmware Loaded"
+                }
+            ]
+        },
+        {
+            "id": "MID-071",
+            "name": "Sanitized and Escaped User Data for Web Applications",
+            "text": "Sanitized and Escaped User Data for Web Applications",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-319",
+                    "text": "Cross Site Scripting (XSS)"
+                }
+            ]
+        },
+        {
+            "id": "MID-072",
+            "name": "Parameterized SQL Queries",
+            "text": "Parameterized SQL Queries",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-320",
+                    "text": "SQL Injection"
+                }
+            ]
+        },
+        {
+            "id": "MID-073",
+            "name": "Secure HTTP Session Management",
+            "text": "Secure HTTP Session Management",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-321",
+                    "text": "HTTP Application Session Hijacking"
+                }
+            ]
+        },
+        {
+            "id": "MID-074",
+            "name": "Cross Site Request Forgery Mitigations",
+            "text": "Cross Site Request Forgery Mitigations",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-322",
+                    "text": "Cross Site Request Forgery (CSRF)"
+                }
+            ]
+        },
+        {
+            "id": "MID-075",
+            "name": "Path Traversal Protections",
+            "text": "Path Traversal Protections",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-323",
+                    "text": "HTTP Path Traversal"
+                }
+            ]
+        },
+        {
+            "id": "MID-076",
+            "name": "Web Direct Object Reference Authentication",
+            "text": "Web Direct Object Reference Authentication",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-324",
+                    "text": "HTTP Direct Object Reference"
+                }
+            ]
+        },
+        {
+            "id": "MID-077",
+            "name": "Secure Deserialization",
+            "text": "Secure Deserialization",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-326",
+                    "text": "Insecure Deserialization"
+                }
+            ]
+        },
+        {
+            "id": "MID-078",
+            "name": "HTTP Request/Response Validation",
+            "text": "HTTP Request/Response Validation",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-325",
+                    "text": "HTTP Injection/Response Splitting"
+                }
+            ]
+        },
+        {
+            "id": "MID-079",
+            "name": "Remove Undocumented Network Functionality",
+            "text": "Remove Undocumented Network Functionality",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-401",
+                    "text": "Undocumented Protocol Features"
+                }
+            ]
+        },
+        {
+            "id": "MID-080",
+            "name": "Network Request Processing Limits",
+            "text": "Network Request Processing Limits",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-405",
+                    "text": "Network Stack Resource Exhaustion"
+                }
+            ]
+        },
+        {
+            "id": "MID-081",
+            "name": "Secure Network Tunnels",
+            "text": "Secure Network Tunnels",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-406",
+                    "text": "Unauthorized Messages or Connections"
+                },
+                {
+                    "id": "TID-408",
+                    "text": "Unencrypted Sensitive Data Communication"
+                }
+            ]
+        },
+        {
+            "id": "MID-082",
+            "name": "Post-quantum Cryptography",
+            "text": "Post-quantum Cryptography",
+            "level": "intermediate",
+            "threats": [
+                {
+                    "id": "TID-411",
+                    "text": "Weak/Insecure Cryptographic Protocol"
+                }
+            ]
+        },
+        {
+            "id": "MID-083",
+            "name": "Network Firewall/Access Control List",
+            "text": "Network Firewall/Access Control List",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-412",
+                    "text": "Network Routing Capability Abuse"
+                }
+            ]
+        }
+    ]
+}

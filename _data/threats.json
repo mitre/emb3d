@@ -1,0 +1,1555 @@
+{
+    "threats": [
+        {
+            "id": "TID-101",
+            "text": "Power Consumption Analysis Side Channel",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-11"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-027"
+                },
+                {
+                    "id": "MID-059"
+                },
+                {
+                    "id": "MID-060"
+                }
+            ]
+        },
+        {
+            "id": "TID-102",
+            "text": "Electromagnetic Analysis Side Channel",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-11"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-027"
+                },
+                {
+                    "id": "MID-059"
+                },
+                {
+                    "id": "MID-060"
+                }
+            ]
+        },
+        {
+            "id": "TID-103",
+            "text": "Cache Timing Analysis Side Channel",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-11"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-050"
+                },
+                {
+                    "id": "MID-051"
+                },
+                {
+                    "id": "MID-061"
+                }
+            ]
+        },
+        {
+            "id": "TID-105",
+            "text": "Hardware Fault Injection – Control Flow Modification",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-11"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-062"
+                },
+                {
+                    "id": "MID-063"
+                },
+                {
+                    "id": "MID-066"
+                }
+            ]
+        },
+        {
+            "id": "TID-106",
+            "text": "Data Bus Interception",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-121"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-052"
+                },
+                {
+                    "id": "MID-054"
+                },
+                {
+                    "id": "MID-055"
+                },
+                {
+                    "id": "MID-064"
+                },
+                {
+                    "id": "MID-065"
+                }
+            ]
+        },
+        {
+            "id": "TID-107",
+            "text": "Unauthorized Direct Memory Access (DMA)",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-122"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-053"
+                },
+                {
+                    "id": "MID-065"
+                },
+                {
+                    "id": "MID-070"
+                }
+            ]
+        },
+        {
+            "id": "TID-108",
+            "text": "ROM/NVRAM Data Extraction or Modification",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-123"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-052"
+                },
+                {
+                    "id": "MID-054"
+                },
+                {
+                    "id": "MID-055"
+                },
+                {
+                    "id": "MID-064"
+                }
+            ]
+        },
+        {
+            "id": "TID-109",
+            "text": "RAM Chip Contents Readout",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-124"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-052"
+                },
+                {
+                    "id": "MID-055"
+                },
+                {
+                    "id": "MID-065"
+                }
+            ]
+        },
+        {
+            "id": "TID-110",
+            "text": "Hardware Fault Injection – Data Manipulation",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-1241"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-051"
+                },
+                {
+                    "id": "MID-065"
+                },
+                {
+                    "id": "MID-066"
+                },
+                {
+                    "id": "MID-067"
+                }
+            ]
+        },
+        {
+            "id": "TID-111",
+            "text": "Untrusted External Storage",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-14"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-056"
+                }
+            ]
+        },
+        {
+            "id": "TID-113",
+            "text": "Unverified Peripheral Firmware Loaded",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-13"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-011"
+                },
+                {
+                    "id": "MID-070"
+                }
+            ]
+        },
+        {
+            "id": "TID-114",
+            "text": "Peripheral Data Bus Interception",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-13"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-052"
+                },
+                {
+                    "id": "MID-055"
+                },
+                {
+                    "id": "MID-068"
+                }
+            ]
+        },
+        {
+            "id": "TID-115",
+            "text": "Firmware/Data Extraction via Hardware Interface",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-15"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-057"
+                },
+                {
+                    "id": "MID-058"
+                }
+            ]
+        },
+        {
+            "id": "TID-116",
+            "text": "Latent Privileged Access Port",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-15"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-057"
+                }
+            ]
+        },
+        {
+            "id": "TID-118",
+            "text": "Weak Peripheral Port Electrical Damage Protection",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-14"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-069"
+                }
+            ]
+        },
+        {
+            "id": "TID-119",
+            "text": "Latent Hardware Debug Port Allows Memory/Code Manipulation",
+            "category": "Hardware",
+            "properties": [
+                {
+                    "id": "PID-15"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-057"
+                },
+                {
+                    "id": "MID-058"
+                }
+            ]
+        },
+        {
+            "id": "TID-201",
+            "text": "Inadequate Bootloader Protection and Verification",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-21"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-029"
+                }
+            ]
+        },
+        {
+            "id": "TID-202",
+            "text": "Exploitable System Network Stack Component",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-004"
+                },
+                {
+                    "id": "MID-005"
+                },
+                {
+                    "id": "MID-006"
+                },
+                {
+                    "id": "MID-007"
+                },
+                {
+                    "id": "MID-008"
+                },
+                {
+                    "id": "MID-014"
+                }
+            ]
+        },
+        {
+            "id": "TID-203",
+            "text": "Malicious OS Kernel Driver/Module Installable",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-231"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-009"
+                },
+                {
+                    "id": "MID-010"
+                },
+                {
+                    "id": "MID-011"
+                }
+            ]
+        },
+        {
+            "id": "TID-204",
+            "text": "Untrusted Programs Can Access Privileged OS Functions",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-2321"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-012"
+                },
+                {
+                    "id": "MID-013"
+                },
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-015"
+                }
+            ]
+        },
+        {
+            "id": "TID-205",
+            "text": "Existing OS Tools Maliciously Used for Device Manipulation",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23221"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-012"
+                },
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-015"
+                },
+                {
+                    "id": "MID-016"
+                },
+                {
+                    "id": "MID-017"
+                },
+                {
+                    "id": "MID-018"
+                }
+            ]
+        },
+        {
+            "id": "TID-206",
+            "text": "Memory Management Protections Subverted",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23222"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-004"
+                },
+                {
+                    "id": "MID-005"
+                },
+                {
+                    "id": "MID-007"
+                },
+                {
+                    "id": "MID-019"
+                },
+                {
+                    "id": "MID-020"
+                }
+            ]
+        },
+        {
+            "id": "TID-207",
+            "text": "Container Escape",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-241"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-022"
+                }
+            ]
+        },
+        {
+            "id": "TID-208",
+            "text": "Virtual Machine Escape",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-242"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-021"
+                },
+                {
+                    "id": "MID-023"
+                }
+            ]
+        },
+        {
+            "id": "TID-209",
+            "text": "Host Can Manipulate Guest Virtual Machines",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-242"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-023"
+                },
+                {
+                    "id": "MID-024"
+                }
+            ]
+        },
+        {
+            "id": "TID-210",
+            "text": "Device Vulnerabilities Unpatchable",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-26"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-025"
+                },
+                {
+                    "id": "MID-026"
+                }
+            ]
+        },
+        {
+            "id": "TID-211",
+            "text": "Device Allows Unauthenticated Firmware Installation",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-271"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-026"
+                }
+            ]
+        },
+        {
+            "id": "TID-212",
+            "text": "FW/SW Update Integrity Shared Secrets Extraction",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-2721"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-026"
+                },
+                {
+                    "id": "MID-033"
+                }
+            ]
+        },
+        {
+            "id": "TID-213",
+            "text": "Faulty FW/SW Update Integrity Verification",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-2722"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-026"
+                },
+                {
+                    "id": "MID-027"
+                }
+            ]
+        },
+        {
+            "id": "TID-214",
+            "text": "Secrets Extracted from Device Root of Trust",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-251"
+                },
+                {
+                    "id": "PID-272"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-028"
+                },
+                {
+                    "id": "MID-060"
+                }
+            ]
+        },
+        {
+            "id": "TID-215",
+            "text": "Unencrypted SW/FW Updates",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-273"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-026"
+                }
+            ]
+        },
+        {
+            "id": "TID-216",
+            "text": "Firmware Update Rollbacks Allowed",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-274"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-030"
+                }
+            ]
+        },
+        {
+            "id": "TID-217",
+            "text": "Remotely Initiated Updates Can Cause DoS",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-275"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-026"
+                },
+                {
+                    "id": "MID-031"
+                },
+                {
+                    "id": "MID-032"
+                }
+            ]
+        },
+        {
+            "id": "TID-218",
+            "text": "Operating System Susceptible to Rootkit",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-009"
+                }
+            ]
+        },
+        {
+            "id": "TID-219",
+            "text": "OS/Kernel Privilege Escalation",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23221"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-004"
+                },
+                {
+                    "id": "MID-005"
+                },
+                {
+                    "id": "MID-012"
+                }
+            ]
+        },
+        {
+            "id": "TID-220",
+            "text": "Unpatchable Hardware Root of Trust",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-252"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-033"
+                }
+            ]
+        },
+        {
+            "id": "TID-221",
+            "text": "Authentication Bypass By Message Replay",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-036"
+                },
+                {
+                    "id": "MID-037"
+                }
+            ]
+        },
+        {
+            "id": "TID-222",
+            "text": "Critical System Service May Be Disabled",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-031"
+                },
+                {
+                    "id": "MID-032"
+                },
+                {
+                    "id": "MID-038"
+                }
+            ]
+        },
+        {
+            "id": "TID-223",
+            "text": "System Susceptible to RAM Scraping",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-23222"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-065"
+                }
+            ]
+        },
+        {
+            "id": "TID-224",
+            "text": "Excessive Access via Software Diagnostic Features",
+            "category": "System Software",
+            "properties": [
+                {
+                    "id": "PID-22"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-018"
+                },
+                {
+                    "id": "MID-039"
+                }
+            ]
+        },
+        {
+            "id": "TID-301",
+            "text": "Applications Binaries Modified",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-31"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-001"
+                },
+                {
+                    "id": "MID-002"
+                },
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-009"
+                }
+            ]
+        },
+        {
+            "id": "TID-302",
+            "text": "Install Untrusted Application",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-32"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-003"
+                },
+                {
+                    "id": "MID-009"
+                },
+                {
+                    "id": "MID-031"
+                },
+                {
+                    "id": "MID-038"
+                },
+                {
+                    "id": "MID-040"
+                },
+                {
+                    "id": "MID-041"
+                },
+                {
+                    "id": "MID-051"
+                }
+            ]
+        },
+        {
+            "id": "TID-303",
+            "text": "Excessive Trust in Offboard Management/IDE Software",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-321"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-041"
+                },
+                {
+                    "id": "MID-042"
+                }
+            ]
+        },
+        {
+            "id": "TID-304",
+            "text": "Manipulate Runtime Environment",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-322"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-009"
+                },
+                {
+                    "id": "MID-012"
+                },
+                {
+                    "id": "MID-013"
+                },
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-015"
+                }
+            ]
+        },
+        {
+            "id": "TID-305",
+            "text": "Program Executes Dangerous System Calls",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3231"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-012"
+                },
+                {
+                    "id": "MID-014"
+                },
+                {
+                    "id": "MID-015"
+                }
+            ]
+        },
+        {
+            "id": "TID-306",
+            "text": "Sandboxed Environments Escaped",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3232"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-012"
+                },
+                {
+                    "id": "MID-022"
+                }
+            ]
+        },
+        {
+            "id": "TID-307",
+            "text": "Device Code Representations Inconsistent",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-324"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-042"
+                }
+            ]
+        },
+        {
+            "id": "TID-308",
+            "text": "Code Overwritten to Avoid Detection",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-324"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-017"
+                }
+            ]
+        },
+        {
+            "id": "TID-309",
+            "text": "Device Exploits Engineering Workstation",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-324"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-008"
+                }
+            ]
+        },
+        {
+            "id": "TID-310",
+            "text": "Remotely Accessible Unauthenticated Services",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-331"
+                },
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-034"
+                }
+            ]
+        },
+        {
+            "id": "TID-311",
+            "text": "Default Credentials",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-332"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-043"
+                }
+            ]
+        },
+        {
+            "id": "TID-312",
+            "text": "Credential Change Mechanism Can Be Abused",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-332"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-038"
+                }
+            ]
+        },
+        {
+            "id": "TID-313",
+            "text": "Unauthenticated Session Changes Credential",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-332"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-038"
+                }
+            ]
+        },
+        {
+            "id": "TID-314",
+            "text": "Passwords Can Be Guessed Using Brute-Force Attempts",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3321"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-045"
+                },
+                {
+                    "id": "MID-046"
+                }
+            ]
+        },
+        {
+            "id": "TID-315",
+            "text": "Password Retrieval Mechanism Abused",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3321"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-017"
+                }
+            ]
+        },
+        {
+            "id": "TID-316",
+            "text": "Incorrect Certificate Verification Allows Authentication Bypass",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3322"
+                },
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-027"
+                }
+            ]
+        },
+        {
+            "id": "TID-317",
+            "text": "Predictable Cryptographic Key",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3322"
+                },
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-033"
+                },
+                {
+                    "id": "MID-047"
+                },
+                {
+                    "id": "MID-048"
+                },
+                {
+                    "id": "MID-060"
+                }
+            ]
+        },
+        {
+            "id": "TID-318",
+            "text": "Insecure Cryptographic Implementation",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3322"
+                },
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-027"
+                },
+                {
+                    "id": "MID-060"
+                }
+            ]
+        },
+        {
+            "id": "TID-319",
+            "text": "Cross Site Scripting (XSS)",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-071"
+                }
+            ]
+        },
+        {
+            "id": "TID-320",
+            "text": "SQL Injection",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-072"
+                }
+            ]
+        },
+        {
+            "id": "TID-321",
+            "text": "HTTP Application Session Hijacking",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-035"
+                },
+                {
+                    "id": "MID-073"
+                }
+            ]
+        },
+        {
+            "id": "TID-322",
+            "text": "Cross Site Request Forgery (CSRF)",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-074"
+                }
+            ]
+        },
+        {
+            "id": "TID-323",
+            "text": "HTTP Path Traversal",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-075"
+                }
+            ]
+        },
+        {
+            "id": "TID-324",
+            "text": "HTTP Direct Object Reference",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-076"
+                }
+            ]
+        },
+        {
+            "id": "TID-325",
+            "text": "HTTP Injection/Response Splitting",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-311"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-078"
+                }
+            ]
+        },
+        {
+            "id": "TID-326",
+            "text": "Insecure Deserialization",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3121"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-077"
+                }
+            ]
+        },
+        {
+            "id": "TID-327",
+            "text": "Out of Bounds Memory Access",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3122"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-004"
+                },
+                {
+                    "id": "MID-005"
+                },
+                {
+                    "id": "MID-006"
+                },
+                {
+                    "id": "MID-013"
+                }
+            ]
+        },
+        {
+            "id": "TID-328",
+            "text": "Hardcoded Credentials",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-332"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-043"
+                }
+            ]
+        },
+        {
+            "id": "TID-329",
+            "text": "Improper Password Storage",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-3321"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-049"
+                }
+            ]
+        },
+        {
+            "id": "TID-330",
+            "text": "Cryptographic Timing Side-Channel",
+            "category": "Application Software",
+            "properties": [
+                {
+                    "id": "PID-272"
+                },
+                {
+                    "id": "PID-3322"
+                },
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-027"
+                },
+                {
+                    "id": "MID-044"
+                }
+            ]
+        },
+        {
+            "id": "TID-401",
+            "text": "Undocumented Protocol Features",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-079"
+                }
+            ]
+        },
+        {
+            "id": "TID-404",
+            "text": "Remotely Triggerable Deadlock/DoS",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-008"
+                },
+                {
+                    "id": "MID-032"
+                }
+            ]
+        },
+        {
+            "id": "TID-405",
+            "text": "Network Stack Resource Exhaustion",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-008"
+                },
+                {
+                    "id": "MID-032"
+                },
+                {
+                    "id": "MID-080"
+                }
+            ]
+        },
+        {
+            "id": "TID-406",
+            "text": "Unauthorized Messages or Connections",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-4111"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-034"
+                },
+                {
+                    "id": "MID-081"
+                }
+            ]
+        },
+        {
+            "id": "TID-407",
+            "text": "Missing Message Replay Protection",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-41"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-036"
+                },
+                {
+                    "id": "MID-037"
+                }
+            ]
+        },
+        {
+            "id": "TID-408",
+            "text": "Unencrypted Sensitive Data Communication",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-4112"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-035"
+                },
+                {
+                    "id": "MID-081"
+                }
+            ]
+        },
+        {
+            "id": "TID-410",
+            "text": "Cryptographic Protocol Side Channel",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-4113"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-044"
+                }
+            ]
+        },
+        {
+            "id": "TID-411",
+            "text": "Weak/Insecure Cryptographic Protocol",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-4113"
+                },
+                {
+                    "id": "PID-3322"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-044"
+                },
+                {
+                    "id": "MID-082"
+                }
+            ]
+        },
+        {
+            "id": "TID-412",
+            "text": "Network Routing Capability Abuse",
+            "category": "Networking",
+            "properties": [
+                {
+                    "id": "PID-42"
+                }
+            ],
+            "mitigations": [
+                {
+                    "id": "MID-017"
+                },
+                {
+                    "id": "MID-018"
+                },
+                {
+                    "id": "MID-031"
+                },
+                {
+                    "id": "MID-038"
+                },
+                {
+                    "id": "MID-083"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2028 @@
+{
+  "threats": [
+    {
+      "id": "TID-101",
+      "text": "Power Consumption Analysis Side Channel",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-11",
+          "text": "Device includes a microprocessor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-059",
+          "text": "Software Patterns for Side Channel Resistance",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-060",
+          "text": "Dedicated Hardware Cryptographic Modules",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-102",
+      "text": "Electromagnetic Analysis Side Channel",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-11",
+          "text": "Device includes a microprocessor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-059",
+          "text": "Software Patterns for Side Channel Resistance",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-060",
+          "text": "Dedicated Hardware Cryptographic Modules",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-103",
+      "text": "Cache Timing Analysis Side Channel",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-11",
+          "text": "Device includes a microprocessor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-050",
+          "text": "Operating System Defenses Against Microarchitecture Feature Side Channels",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-051",
+          "text": "Disallow User-Provided Code",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-061",
+          "text": "Use Separate Processors for Isolation",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-105",
+      "text": "Hardware Fault Injection \u2013 Control Flow Modification",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-11",
+          "text": "Device includes a microprocessor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-062",
+          "text": "Hardware Mitigations for Fault Injection",
+          "level": "leading"
+        },
+        {
+          "id": "MID-063",
+          "text": "Software Mitigations for Fault Injection",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-066",
+          "text": "Implement Redundant Processing and Memory",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-106",
+      "text": "Data Bus Interception",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-121",
+          "text": "Device includes buses for external memory/storage"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-052",
+          "text": "Physically Protect Circuit Board Traces and Chip Pins",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-054",
+          "text": "Encrypt and Authenticate Non-volatile Storage Contents",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-055",
+          "text": "Use Highly Integrated Processors to Avoid Physical Attacks",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-064",
+          "text": "Store Critical Code and Data in On-Chip Memory",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-065",
+          "text": "RAM Encryption",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-107",
+      "text": "Unauthorized Direct Memory Access (DMA)",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-122",
+          "text": "Device includes discrete chips/devices that have access to the same physical memory"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-053",
+          "text": "Use IOMMU to Implement DMA Access Controls",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-065",
+          "text": "RAM Encryption",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-070",
+          "text": "Peripheral Component Authentication",
+          "level": "leading"
+        }
+      ]
+    },
+    {
+      "id": "TID-108",
+      "text": "ROM/NVRAM Data Extraction or Modification",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-123",
+          "text": "Device includes ROM, VRAM, or removable Storage"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-052",
+          "text": "Physically Protect Circuit Board Traces and Chip Pins",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-054",
+          "text": "Encrypt and Authenticate Non-volatile Storage Contents",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-055",
+          "text": "Use Highly Integrated Processors to Avoid Physical Attacks",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-064",
+          "text": "Store Critical Code and Data in On-Chip Memory",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-109",
+      "text": "RAM Chip Contents Readout",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-124",
+          "text": "Device includes Random Access Memory (RAM) chips"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-052",
+          "text": "Physically Protect Circuit Board Traces and Chip Pins",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-055",
+          "text": "Use Highly Integrated Processors to Avoid Physical Attacks",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-065",
+          "text": "RAM Encryption",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-110",
+      "text": "Hardware Fault Injection \u2013 Data Manipulation",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-1241",
+          "text": "Device includes DDR DRAM"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-051",
+          "text": "Disallow User-Provided Code",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-065",
+          "text": "RAM Encryption",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-066",
+          "text": "Implement Redundant Processing and Memory",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-067",
+          "text": "Implement DRAM RowHammer-resistant DRAM and Memory Controllers",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-111",
+      "text": "Untrusted External Storage",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-14",
+          "text": "Device includes external peripheral interconnects (e.g., USB, Serial)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-056",
+          "text": "Allow Device Administrators to Disable Removable Storage Support",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-113",
+      "text": "Unverified Peripheral Firmware Loaded",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-13",
+          "text": "Device includes peripheral chips and integrated data buses"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-011",
+          "text": "OS Driver/Peripheral Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-070",
+          "text": "Peripheral Component Authentication",
+          "level": "leading"
+        }
+      ]
+    },
+    {
+      "id": "TID-114",
+      "text": "Peripheral Data Bus Interception",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-13",
+          "text": "Device includes peripheral chips and integrated data buses"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-052",
+          "text": "Physically Protect Circuit Board Traces and Chip Pins",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-055",
+          "text": "Use Highly Integrated Processors to Avoid Physical Attacks",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-068",
+          "text": "Data Bus Encryption and Message Authentication",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-115",
+      "text": "Firmware/Data Extraction via Hardware Interface",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-15",
+          "text": "Device includes a hardware access port (e.g., UART, JTAG)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-057",
+          "text": "Disable Physical Development and Debugging Ports",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-058",
+          "text": "Engage Hardware Readout Protection Mechanisms",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-116",
+      "text": "Latent Privileged Access Port",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-15",
+          "text": "Device includes a hardware access port (e.g., UART, JTAG)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-057",
+          "text": "Disable Physical Development and Debugging Ports",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-118",
+      "text": "Weak Peripheral Port Electrical Damage Protection",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-14",
+          "text": "Device includes external peripheral interconnects (e.g., USB, Serial)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-069",
+          "text": "Electrical Fault Protection",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-119",
+      "text": "Latent Hardware Debug Port Allows Memory/Code Manipulation",
+      "category": "Hardware",
+      "properties": [
+        {
+          "id": "PID-15",
+          "text": "Device includes a hardware access port (e.g., UART, JTAG)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-057",
+          "text": "Disable Physical Development and Debugging Ports",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-058",
+          "text": "Engage Hardware Readout Protection Mechanisms",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-201",
+      "text": "Inadequate Bootloader Protection and Verification",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-21",
+          "text": "Device includes a bootloader"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-029",
+          "text": "Hardware Root of Trust",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-202",
+      "text": "Exploitable System Network Stack Component",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23",
+          "text": "Device includes OS/kernel"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-004",
+          "text": "Memory Hardening Against Code Injection",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-005",
+          "text": "Memory Safe Programming Languages",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-006",
+          "text": "Driver Memory Isolation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-007",
+          "text": "Control Flow Manipulation Protections",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-008",
+          "text": "Decidable Protocols and Parsers",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-203",
+      "text": "Malicious OS Kernel Driver/Module Installable",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-231",
+          "text": "Device includes an operating system that uses drivers/modules that can be loaded"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-009",
+          "text": "Operating System-based Runtime Integrity Check",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-010",
+          "text": "No Runtime OS Driver Load",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-011",
+          "text": "OS Driver/Peripheral Authentication",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-204",
+      "text": "Untrusted Programs Can Access Privileged OS Functions",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-2321",
+          "text": "Device lacks an access enforcement/privilege mechanism"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-013",
+          "text": "Process and Thread Memory Segmentation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-015",
+          "text": "Containerization",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-205",
+      "text": "Existing OS Tools Maliciously Used for Device Manipulation",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23221",
+          "text": "Device includes and enforces OS user accounts"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-015",
+          "text": "Containerization",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-016",
+          "text": "Least Functionality",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-017",
+          "text": "Security-relevant Auditing and Logging",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-018",
+          "text": "Require Authentication for Privileged Functions",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-206",
+      "text": "Memory Management Protections Subverted",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23222",
+          "text": "Device includes a memory management model, including protections of memory access (read-only/, executable, writable)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-004",
+          "text": "Memory Hardening Against Code Injection",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-005",
+          "text": "Memory Safe Programming Languages",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-007",
+          "text": "Control Flow Manipulation Protections",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-019",
+          "text": "ROP Gadget Minimization",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-020",
+          "text": "Pointer Authentication",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-207",
+      "text": "Container Escape",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-241",
+          "text": "Device includes containers"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-022",
+          "text": "Segmentation Through Hardware-assisted VMs",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-208",
+      "text": "Virtual Machine Escape",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-242",
+          "text": "Device includes hypervisor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-021",
+          "text": "VM Hardening",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-023",
+          "text": "Hypervisor Hardening",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-209",
+      "text": "Host Can Manipulate Guest Virtual Machines",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-242",
+          "text": "Device includes hypervisor"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-023",
+          "text": "Hypervisor Hardening",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-024",
+          "text": "Encrypted VM Isolation",
+          "level": "leading"
+        }
+      ]
+    },
+    {
+      "id": "TID-210",
+      "text": "Device Vulnerabilities Unpatchable",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-26",
+          "text": "Device lacks firmware/software update support"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-025",
+          "text": "End-of-Life Management Features",
+          "level": "leading"
+        },
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-211",
+      "text": "Device Allows Unauthenticated Firmware Installation",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-271",
+          "text": "Device has firmware or software that is not cryptographically checked for integrity validation"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-212",
+      "text": "FW/SW Update Integrity Shared Secrets Extraction",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-2721",
+          "text": "Device includes a shared key for firmware integrity validation"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-033",
+          "text": "Unique Factory Preinstalled Secret Keys",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-213",
+      "text": "Faulty FW/SW Update Integrity Verification",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-2722",
+          "text": "Device includes digitally signed firmware (with private key)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-214",
+      "text": "Secrets Extracted from Device Root of Trust",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-251",
+          "text": "Root of Trust is physically accessible or is not immutable"
+        },
+        {
+          "id": "PID-272",
+          "text": "Device includes cryptographic firmware/software integrity protection mechanisms"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-028",
+          "text": "Hardware-backed Key Storage",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-060",
+          "text": "Dedicated Hardware Cryptographic Modules",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-215",
+      "text": "Unencrypted SW/FW Updates",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-273",
+          "text": "Device has unencrypted firmware updates"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-216",
+      "text": "Firmware Update Rollbacks Allowed",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-274",
+          "text": "Device includes user firmware/software version selection during updates"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-030",
+          "text": "Firmware Rollback Protections",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-217",
+      "text": "Remotely Initiated Updates Can Cause DoS",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-275",
+          "text": "Device includes  remotely-initiated firmware/software updates"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-026",
+          "text": "Secure Firmware Update",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-031",
+          "text": "Physical Presence Validation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-032",
+          "text": "System Service Availability Manager",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-218",
+      "text": "Operating System Susceptible to Rootkit",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23",
+          "text": "Device includes OS/kernel"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-009",
+          "text": "Operating System-based Runtime Integrity Check",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-219",
+      "text": "OS/Kernel Privilege Escalation",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23221",
+          "text": "Device includes and enforces OS user accounts"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-004",
+          "text": "Memory Hardening Against Code Injection",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-005",
+          "text": "Memory Safe Programming Languages",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-220",
+      "text": "Unpatchable Hardware Root of Trust",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-252",
+          "text": "Root of Trust is immutable"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-033",
+          "text": "Unique Factory Preinstalled Secret Keys",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-221",
+      "text": "Authentication Bypass By Message Replay",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-036",
+          "text": "Cryptographic Nonces",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-037",
+          "text": "Network Timestamps",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-222",
+      "text": "Critical System Service May Be Disabled",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-031",
+          "text": "Physical Presence Validation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-032",
+          "text": "System Service Availability Manager",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-223",
+      "text": "System Susceptible to RAM Scraping",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-23222",
+          "text": "Device includes a memory management model, including protections of memory access (read-only/, executable, writable)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-065",
+          "text": "RAM Encryption",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-224",
+      "text": "Excessive Access via Software Diagnostic Features",
+      "category": "System Software",
+      "properties": [
+        {
+          "id": "PID-22",
+          "text": "Device includes a debugging capabilities"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-018",
+          "text": "Require Authentication for Privileged Functions",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-039",
+          "text": "Restrict Software Diagnostic Functions",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-301",
+      "text": "Applications Binaries Modified",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-31",
+          "text": "Application-level software is present and running on the device"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-001",
+          "text": "Software Only Bootloader Authentication",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-002",
+          "text": "Hardware-backed Bootloader Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-009",
+          "text": "Operating System-based Runtime Integrity Check",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-302",
+      "text": "Install Untrusted Application",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-32",
+          "text": "Device includes the ability to deploy custom or external programs (e.g., ladder logic, compiled binaries)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-003",
+          "text": "Periodic/Continuous Integrity Measurement and Remote Attestation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-009",
+          "text": "Operating System-based Runtime Integrity Check",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-031",
+          "text": "Physical Presence Validation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-040",
+          "text": "Cryptographically Signed Custom Programs",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-041",
+          "text": "Cryptographically Signed Vendor-supplied Programs",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-051",
+          "text": "Disallow User-Provided Code",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-303",
+      "text": "Excessive Trust in Offboard Management/IDE Software",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-321",
+          "text": "Device includes ability to deploy custom programs from engineering software or IDE"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-041",
+          "text": "Cryptographically Signed Vendor-supplied Programs",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-042",
+          "text": "Device Checks Consistency Between Binary/Running Code and Textual Code",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-304",
+      "text": "Manipulate Runtime Environment",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-322",
+          "text": "Device includes a program runtime environment for custom or external programs"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-009",
+          "text": "Operating System-based Runtime Integrity Check",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-013",
+          "text": "Process and Thread Memory Segmentation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-015",
+          "text": "Containerization",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-305",
+      "text": "Program Executes Dangerous System Calls",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3231",
+          "text": "Device includes ability to run custom/external programs as native binary without a confined/restricted environment"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-014",
+          "text": "Sandboxing",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-015",
+          "text": "Containerization",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-306",
+      "text": "Sandboxed Environments Escaped",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3232",
+          "text": "Device includes ability to run custom/external programs/processes through an execution sandboxed environment"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-012",
+          "text": "OS-based Access Control Mechanisms",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-022",
+          "text": "Segmentation Through Hardware-assisted VMs",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-307",
+      "text": "Device Code Representations Inconsistent",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-324",
+          "text": "Device includes support for \"program uploads\" to retrieve programs from the device from an engineering workstation"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-042",
+          "text": "Device Checks Consistency Between Binary/Running Code and Textual Code",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-308",
+      "text": "Code Overwritten to Avoid Detection",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-324",
+          "text": "Device includes support for \"program uploads\" to retrieve programs from the device from an engineering workstation"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-017",
+          "text": "Security-relevant Auditing and Logging",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-309",
+      "text": "Device Exploits Engineering Workstation",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-324",
+          "text": "Device includes support for \"program uploads\" to retrieve programs from the device from an engineering workstation"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-008",
+          "text": "Decidable Protocols and Parsers",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-310",
+      "text": "Remotely Accessible Unauthenticated Services",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-331",
+          "text": "Device includes unauthenticated services"
+        },
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-034",
+          "text": "Authenticate Network Messages",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-311",
+      "text": "Default Credentials",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-332",
+          "text": "Device includes authenticated services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-043",
+          "text": "Manage Default Login Credentials",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-312",
+      "text": "Credential Change Mechanism Can Be Abused",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-332",
+          "text": "Device includes authenticated services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-313",
+      "text": "Unauthenticated Session Changes Credential",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-332",
+          "text": "Device includes authenticated services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-314",
+      "text": "Passwords Can Be Guessed Using Brute-Force Attempts",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3321",
+          "text": "Device includes passwords to authenticate the users"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-045",
+          "text": "Multi-factor Authentication",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-046",
+          "text": "Authentication Attempts Timeouts and Lockouts",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-315",
+      "text": "Password Retrieval Mechanism Abused",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3321",
+          "text": "Device includes passwords to authenticate the users"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-017",
+          "text": "Security-relevant Auditing and Logging",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-316",
+      "text": "Incorrect Certificate Verification Allows Authentication Bypass",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3322",
+          "text": "Device includes cryptographic mechanism to authenticate users and sessions"
+        },
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-317",
+      "text": "Predictable Cryptographic Key",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3322",
+          "text": "Device includes cryptographic mechanism to authenticate users and sessions"
+        },
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-033",
+          "text": "Unique Factory Preinstalled Secret Keys",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-047",
+          "text": "Sufficient Entropy for Keys",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-048",
+          "text": "Hardware Random Number Generator",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-060",
+          "text": "Dedicated Hardware Cryptographic Modules",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-318",
+      "text": "Insecure Cryptographic Implementation",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3322",
+          "text": "Device includes cryptographic mechanism to authenticate users and sessions"
+        },
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-060",
+          "text": "Dedicated Hardware Cryptographic Modules",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-319",
+      "text": "Cross Site Scripting (XSS)",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-071",
+          "text": "Sanitized and Escaped User Data for Web Applications",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-320",
+      "text": "SQL Injection",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-072",
+          "text": "Parameterized SQL Queries",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-321",
+      "text": "HTTP Application Session Hijacking",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-035",
+          "text": "Encrypt Network Traffic",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-073",
+          "text": "Secure HTTP Session Management",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-322",
+      "text": "Cross Site Request Forgery (CSRF)",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-074",
+          "text": "Cross Site Request Forgery Mitigations",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-323",
+      "text": "HTTP Path Traversal",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-075",
+          "text": "Path Traversal Protections",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-324",
+      "text": "HTTP Direct Object Reference",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-076",
+          "text": "Web Direct Object Reference Authentication",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-325",
+      "text": "HTTP Injection/Response Splitting",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-311",
+          "text": "Device includes the usage of a web/HTTP applications"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-078",
+          "text": "HTTP Request/Response Validation",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-326",
+      "text": "Insecure Deserialization",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3121",
+          "text": "Device includes support for object oriented programming languages(e.g., Java, Python, PHP, C++)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-077",
+          "text": "Secure Deserialization",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-327",
+      "text": "Out of Bounds Memory Access",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3122",
+          "text": "Device includes support for manual memory management programming languages (e.g. C, C++)"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-004",
+          "text": "Memory Hardening Against Code Injection",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-005",
+          "text": "Memory Safe Programming Languages",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-006",
+          "text": "Driver Memory Isolation",
+          "level": "leading"
+        },
+        {
+          "id": "MID-013",
+          "text": "Process and Thread Memory Segmentation",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-328",
+      "text": "Hardcoded Credentials",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-332",
+          "text": "Device includes authenticated services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-043",
+          "text": "Manage Default Login Credentials",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-329",
+      "text": "Improper Password Storage",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-3321",
+          "text": "Device includes passwords to authenticate the users"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-049",
+          "text": "Secure Password Storage",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-330",
+      "text": "Cryptographic Timing Side-Channel",
+      "category": "Application Software",
+      "properties": [
+        {
+          "id": "PID-272",
+          "text": "Device includes cryptographic firmware/software integrity protection mechanisms"
+        },
+        {
+          "id": "PID-3322",
+          "text": "Device includes cryptographic mechanism to authenticate users and sessions"
+        },
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-027",
+          "text": "Validated Cryptographic Libraries",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-044",
+          "text": "Strong Cryptographic Algorithms and Protocols",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-401",
+      "text": "Undocumented Protocol Features",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-079",
+          "text": "Remove Undocumented Network Functionality",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-404",
+      "text": "Remotely Triggerable Deadlock/DoS",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-008",
+          "text": "Decidable Protocols and Parsers",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-032",
+          "text": "System Service Availability Manager",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-405",
+      "text": "Network Stack Resource Exhaustion",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-008",
+          "text": "Decidable Protocols and Parsers",
+          "level": "intermediate"
+        },
+        {
+          "id": "MID-032",
+          "text": "System Service Availability Manager",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-080",
+          "text": "Network Request Processing Limits",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-406",
+      "text": "Unauthorized Messages or Connections",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-4111",
+          "text": "Device lacks protocol support for message authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-034",
+          "text": "Authenticate Network Messages",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-081",
+          "text": "Secure Network Tunnels",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-407",
+      "text": "Missing Message Replay Protection",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-41",
+          "text": "Device exposes remote network services"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-036",
+          "text": "Cryptographic Nonces",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-037",
+          "text": "Network Timestamps",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-408",
+      "text": "Unencrypted Sensitive Data Communication",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-4112",
+          "text": "Device lacks protocol support for message encryption"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-035",
+          "text": "Encrypt Network Traffic",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-081",
+          "text": "Secure Network Tunnels",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-410",
+      "text": "Cryptographic Protocol Side Channel",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-044",
+          "text": "Strong Cryptographic Algorithms and Protocols",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-411",
+      "text": "Weak/Insecure Cryptographic Protocol",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-4113",
+          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+        },
+        {
+          "id": "PID-3322",
+          "text": "Device includes cryptographic mechanism to authenticate users and sessions"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-044",
+          "text": "Strong Cryptographic Algorithms and Protocols",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-082",
+          "text": "Post-quantum Cryptography",
+          "level": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": "TID-412",
+      "text": "Network Routing Capability Abuse",
+      "category": "Networking",
+      "properties": [
+        {
+          "id": "PID-42",
+          "text": "Device includes procedure to forward or route network messages"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-017",
+          "text": "Security-relevant Auditing and Logging",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-018",
+          "text": "Require Authentication for Privileged Functions",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-031",
+          "text": "Physical Presence Validation",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-083",
+          "text": "Network Firewall/Access Control List",
+          "level": "foundational"
+        }
+      ]
+    }
+  ]
+}
