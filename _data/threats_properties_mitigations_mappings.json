@@ -3,7 +3,7 @@
     {
       "id": "TID-101",
       "text": "Power Consumption Analysis Side Channel",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-11",
@@ -31,7 +31,7 @@
     {
       "id": "TID-102",
       "text": "Electromagnetic Analysis Side Channel",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-11",
@@ -58,8 +58,8 @@
     },
     {
       "id": "TID-103",
-      "text": "Cache Timing Analysis Side Channel",
-      "category": "Hardware",
+      "text": "Microarchitectural Side Channels",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-11",
@@ -92,7 +92,7 @@
     {
       "id": "TID-105",
       "text": "Hardware Fault Injection \u2013 Control Flow Modification",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-11",
@@ -120,7 +120,7 @@
     {
       "id": "TID-106",
       "text": "Data Bus Interception",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-121",
@@ -158,7 +158,7 @@
     {
       "id": "TID-107",
       "text": "Unauthorized Direct Memory Access (DMA)",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-122",
@@ -186,7 +186,7 @@
     {
       "id": "TID-108",
       "text": "ROM/NVRAM Data Extraction or Modification",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-123",
@@ -219,7 +219,7 @@
     {
       "id": "TID-109",
       "text": "RAM Chip Contents Readout",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-124",
@@ -247,7 +247,7 @@
     {
       "id": "TID-110",
       "text": "Hardware Fault Injection \u2013 Data Manipulation",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-1241",
@@ -285,7 +285,7 @@
     {
       "id": "TID-111",
       "text": "Untrusted External Storage",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-14",
@@ -303,7 +303,7 @@
     {
       "id": "TID-113",
       "text": "Unverified Peripheral Firmware Loaded",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-13",
@@ -326,7 +326,7 @@
     {
       "id": "TID-114",
       "text": "Peripheral Data Bus Interception",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-13",
@@ -354,7 +354,7 @@
     {
       "id": "TID-115",
       "text": "Firmware/Data Extraction via Hardware Interface",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-15",
@@ -377,7 +377,7 @@
     {
       "id": "TID-116",
       "text": "Latent Privileged Access Port",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-15",
@@ -395,7 +395,7 @@
     {
       "id": "TID-118",
       "text": "Weak Peripheral Port Electrical Damage Protection",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-14",
@@ -413,7 +413,7 @@
     {
       "id": "TID-119",
       "text": "Latent Hardware Debug Port Allows Memory/Code Manipulation",
-      "category": "Hardware",
+      "category": "hardware",
       "properties": [
         {
           "id": "PID-15",
@@ -436,7 +436,7 @@
     {
       "id": "TID-201",
       "text": "Inadequate Bootloader Protection and Verification",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-21",
@@ -469,7 +469,7 @@
     {
       "id": "TID-202",
       "text": "Exploitable System Network Stack Component",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23",
@@ -506,13 +506,28 @@
           "id": "MID-014",
           "text": "Sandboxing",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-086",
+          "text": "Hardware Enforcement of Memory Access",
+          "level": "leading"
+        },
+        {
+          "id": "MID-088",
+          "text": "Formally Verified Parsers",
+          "level": "leading"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-203",
       "text": "Malicious OS Kernel Driver/Module Installable",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-231",
@@ -537,12 +552,12 @@
         },
         {
           "id": "MID-009",
-          "text": "Operating System-based Runtime Integrity Check",
+          "text": "Runtime System Integrity Checking",
           "level": "intermediate"
         },
         {
           "id": "MID-010",
-          "text": "No Runtime OS Driver Load",
+          "text": "No Runtime OS Driver Loading",
           "level": "foundational"
         },
         {
@@ -555,7 +570,7 @@
     {
       "id": "TID-204",
       "text": "Untrusted Programs Can Access Privileged OS Functions",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-2321",
@@ -582,13 +597,18 @@
           "id": "MID-015",
           "text": "Containerization",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-087",
+          "text": "Utilization of Formally Verified OS (Micro-)Kernels",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-205",
       "text": "Existing OS Tools Maliciously Used for Device Manipulation",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23221",
@@ -631,7 +651,7 @@
     {
       "id": "TID-206",
       "text": "Memory Management Protections Subverted",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23222",
@@ -663,13 +683,18 @@
           "id": "MID-020",
           "text": "Pointer Authentication",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-086",
+          "text": "Hardware Enforcement of Memory Access",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-207",
       "text": "Container Escape",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-241",
@@ -687,7 +712,7 @@
     {
       "id": "TID-208",
       "text": "Virtual Machine Escape",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-242",
@@ -704,13 +729,18 @@
           "id": "MID-023",
           "text": "Hypervisor Hardening",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-087",
+          "text": "Utilization of Formally Verified OS (Micro-)Kernels",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-209",
       "text": "Host Can Manipulate Guest Virtual Machines",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-242",
@@ -733,7 +763,7 @@
     {
       "id": "TID-210",
       "text": "Device Vulnerabilities Unpatchable",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-26",
@@ -756,7 +786,7 @@
     {
       "id": "TID-211",
       "text": "Device Allows Unauthenticated Firmware Installation",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-271",
@@ -784,7 +814,7 @@
     {
       "id": "TID-212",
       "text": "FW/SW Update Integrity Shared Secrets Extraction",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-2721",
@@ -799,15 +829,15 @@
         },
         {
           "id": "MID-033",
-          "text": "Unique Factory Preinstalled Secret Keys",
+          "text": "Unique and Unpredictable Factory Preinstalled Secret Keys",
           "level": "intermediate"
         }
       ]
     },
     {
       "id": "TID-213",
-      "text": "Faulty FW/SW Update Integrity Verification",
-      "category": "System Software",
+      "text": "FW/SW Update Integrity Shared Secrets Extraction",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-2722",
@@ -845,7 +875,7 @@
     {
       "id": "TID-214",
       "text": "Secrets Extracted from Device Root of Trust",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-251",
@@ -872,7 +902,7 @@
     {
       "id": "TID-215",
       "text": "Unencrypted SW/FW Updates",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-273",
@@ -890,7 +920,7 @@
     {
       "id": "TID-216",
       "text": "Firmware Update Rollbacks Allowed",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-274",
@@ -908,11 +938,11 @@
     {
       "id": "TID-217",
       "text": "Remotely Initiated Updates Can Cause DoS",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-275",
-          "text": "Device includes  remotely-initiated firmware/software updates"
+          "text": "Device includes remotely-initiated firmware/software updates"
         }
       ],
       "mitigations": [
@@ -936,7 +966,7 @@
     {
       "id": "TID-218",
       "text": "Operating System Susceptible to Rootkit",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23",
@@ -961,7 +991,7 @@
         },
         {
           "id": "MID-009",
-          "text": "Operating System-based Runtime Integrity Check",
+          "text": "Runtime System Integrity Checking",
           "level": "intermediate"
         }
       ]
@@ -969,7 +999,7 @@
     {
       "id": "TID-219",
       "text": "OS/Kernel Privilege Escalation",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23221",
@@ -991,13 +1021,23 @@
           "id": "MID-012",
           "text": "OS-based Access Control Mechanisms",
           "level": "foundational"
+        },
+        {
+          "id": "MID-086",
+          "text": "Hardware Enforcement of Memory Access",
+          "level": "leading"
+        },
+        {
+          "id": "MID-087",
+          "text": "Utilization of Formally Verified OS (Micro-)Kernels",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-220",
       "text": "Unpatchable Hardware Root of Trust",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-252",
@@ -1007,7 +1047,7 @@
       "mitigations": [
         {
           "id": "MID-033",
-          "text": "Unique Factory Preinstalled Secret Keys",
+          "text": "Unique and Unpredictable Factory Preinstalled Secret Keys",
           "level": "intermediate"
         }
       ]
@@ -1015,7 +1055,7 @@
     {
       "id": "TID-221",
       "text": "Authentication Bypass By Message Replay",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-4113",
@@ -1038,7 +1078,7 @@
     {
       "id": "TID-222",
       "text": "Critical System Service May Be Disabled",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-41",
@@ -1066,7 +1106,7 @@
     {
       "id": "TID-223",
       "text": "System Susceptible to RAM Scraping",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-23222",
@@ -1084,7 +1124,7 @@
     {
       "id": "TID-224",
       "text": "Excessive Access via Software Diagnostic Features",
-      "category": "System Software",
+      "category": "system software",
       "properties": [
         {
           "id": "PID-22",
@@ -1105,9 +1145,58 @@
       ]
     },
     {
+      "id": "TID-225",
+      "text": "Logs can be manipulated on the device",
+      "category": "system software",
+      "properties": [
+        {
+          "id": "PID-28",
+          "text": "Device stores logs of system events and information"
+        },
+        {
+          "id": "PID-34",
+          "text": "Device stores logs of application events and information"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-038",
+          "text": "Authenticate for Administrative Actions",
+          "level": "foundational"
+        },
+        {
+          "id": "MID-085",
+          "text": "Export Logs Over the Network Off of Device",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
+      "id": "TID-226",
+      "text": "Device leaks security information in logs",
+      "category": "system software",
+      "properties": [
+        {
+          "id": "PID-28",
+          "text": "Device stores logs of system events and information"
+        },
+        {
+          "id": "PID-34",
+          "text": "Device stores logs of application events and information"
+        }
+      ],
+      "mitigations": [
+        {
+          "id": "MID-084",
+          "text": "Restrict Sensitive Data from Logs",
+          "level": "foundational"
+        }
+      ]
+    },
+    {
       "id": "TID-301",
       "text": "Applications Binaries Modified",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-31",
@@ -1132,7 +1221,7 @@
         },
         {
           "id": "MID-009",
-          "text": "Operating System-based Runtime Integrity Check",
+          "text": "Runtime System Integrity Checking",
           "level": "intermediate"
         }
       ]
@@ -1140,7 +1229,7 @@
     {
       "id": "TID-302",
       "text": "Install Untrusted Application",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-32",
@@ -1155,7 +1244,7 @@
         },
         {
           "id": "MID-009",
-          "text": "Operating System-based Runtime Integrity Check",
+          "text": "Runtime System Integrity Checking",
           "level": "intermediate"
         },
         {
@@ -1188,7 +1277,7 @@
     {
       "id": "TID-303",
       "text": "Excessive Trust in Offboard Management/IDE Software",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-321",
@@ -1200,18 +1289,13 @@
           "id": "MID-041",
           "text": "Cryptographically Signed Vendor-supplied Programs",
           "level": "foundational"
-        },
-        {
-          "id": "MID-042",
-          "text": "Device Checks Consistency Between Binary/Running Code and Textual Code",
-          "level": "foundational"
         }
       ]
     },
     {
       "id": "TID-304",
       "text": "Manipulate Runtime Environment",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-322",
@@ -1221,7 +1305,7 @@
       "mitigations": [
         {
           "id": "MID-009",
-          "text": "Operating System-based Runtime Integrity Check",
+          "text": "Runtime System Integrity Checking",
           "level": "intermediate"
         },
         {
@@ -1243,13 +1327,18 @@
           "id": "MID-015",
           "text": "Containerization",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-305",
       "text": "Program Executes Dangerous System Calls",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3231",
@@ -1277,7 +1366,7 @@
     {
       "id": "TID-306",
       "text": "Sandboxed Environments Escaped",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3232",
@@ -1294,13 +1383,18 @@
           "id": "MID-022",
           "text": "Segmentation Through Hardware-assisted VMs",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-307",
       "text": "Device Code Representations Inconsistent",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-324",
@@ -1318,7 +1412,7 @@
     {
       "id": "TID-308",
       "text": "Code Overwritten to Avoid Detection",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-324",
@@ -1336,7 +1430,7 @@
     {
       "id": "TID-309",
       "text": "Device Exploits Engineering Workstation",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-324",
@@ -1348,13 +1442,18 @@
           "id": "MID-008",
           "text": "Decidable Protocols and Parsers",
           "level": "intermediate"
+        },
+        {
+          "id": "MID-088",
+          "text": "Formally Verified Parsers",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-310",
       "text": "Remotely Accessible Unauthenticated Services",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-331",
@@ -1376,7 +1475,7 @@
     {
       "id": "TID-311",
       "text": "Default Credentials",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-332",
@@ -1394,7 +1493,7 @@
     {
       "id": "TID-312",
       "text": "Credential Change Mechanism Can Be Abused",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-332",
@@ -1412,7 +1511,7 @@
     {
       "id": "TID-313",
       "text": "Unauthenticated Session Changes Credential",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-332",
@@ -1430,7 +1529,7 @@
     {
       "id": "TID-314",
       "text": "Passwords Can Be Guessed Using Brute-Force Attempts",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3321",
@@ -1453,7 +1552,7 @@
     {
       "id": "TID-315",
       "text": "Password Retrieval Mechanism Abused",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3321",
@@ -1471,7 +1570,7 @@
     {
       "id": "TID-316",
       "text": "Incorrect Certificate Verification Allows Authentication Bypass",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3322",
@@ -1493,7 +1592,7 @@
     {
       "id": "TID-317",
       "text": "Predictable Cryptographic Key",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3322",
@@ -1507,7 +1606,7 @@
       "mitigations": [
         {
           "id": "MID-033",
-          "text": "Unique Factory Preinstalled Secret Keys",
+          "text": "Unique and Unpredictable Factory Preinstalled Secret Keys",
           "level": "intermediate"
         },
         {
@@ -1530,7 +1629,7 @@
     {
       "id": "TID-318",
       "text": "Insecure Cryptographic Implementation",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3322",
@@ -1557,7 +1656,7 @@
     {
       "id": "TID-319",
       "text": "Cross Site Scripting (XSS)",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1575,7 +1674,7 @@
     {
       "id": "TID-320",
       "text": "SQL Injection",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1593,7 +1692,7 @@
     {
       "id": "TID-321",
       "text": "HTTP Application Session Hijacking",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1616,7 +1715,7 @@
     {
       "id": "TID-322",
       "text": "Cross Site Request Forgery (CSRF)",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1633,8 +1732,8 @@
     },
     {
       "id": "TID-323",
-      "text": "HTTP Path Traversal",
-      "category": "Application Software",
+      "text": "Path Traversal",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1652,7 +1751,7 @@
     {
       "id": "TID-324",
       "text": "HTTP Direct Object Reference",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1670,7 +1769,7 @@
     {
       "id": "TID-325",
       "text": "HTTP Injection/Response Splitting",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-311",
@@ -1688,7 +1787,7 @@
     {
       "id": "TID-326",
       "text": "Insecure Deserialization",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3121",
@@ -1700,13 +1799,23 @@
           "id": "MID-077",
           "text": "Secure Deserialization",
           "level": "foundational"
+        },
+        {
+          "id": "MID-088",
+          "text": "Formally Verified Parsers",
+          "level": "leading"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-327",
       "text": "Out of Bounds Memory Access",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3122",
@@ -1733,13 +1842,18 @@
           "id": "MID-013",
           "text": "Process and Thread Memory Segmentation",
           "level": "foundational"
+        },
+        {
+          "id": "MID-086",
+          "text": "Hardware Enforcement of Memory Access",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-328",
       "text": "Hardcoded Credentials",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-332",
@@ -1757,7 +1871,7 @@
     {
       "id": "TID-329",
       "text": "Improper Password Storage",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-3321",
@@ -1775,7 +1889,7 @@
     {
       "id": "TID-330",
       "text": "Cryptographic Timing Side-Channel",
-      "category": "Application Software",
+      "category": "application software",
       "properties": [
         {
           "id": "PID-272",
@@ -1786,8 +1900,7 @@
           "text": "Device includes cryptographic mechanism to authenticate users and sessions"
         },
         {
-          "id": "PID-4113",
-          "text": "Device includes cryptographic functions for sensitive data, such as encryption or authentication"
+          "id": "PID-4114"
         }
       ],
       "mitigations": [
@@ -1806,7 +1919,7 @@
     {
       "id": "TID-401",
       "text": "Undocumented Protocol Features",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-41",
@@ -1824,7 +1937,7 @@
     {
       "id": "TID-404",
       "text": "Remotely Triggerable Deadlock/DoS",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-41",
@@ -1841,13 +1954,23 @@
           "id": "MID-032",
           "text": "System Service Availability Manager",
           "level": "foundational"
+        },
+        {
+          "id": "MID-088",
+          "text": "Formally Verified Parsers",
+          "level": "leading"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-405",
       "text": "Network Stack Resource Exhaustion",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-41",
@@ -1869,13 +1992,23 @@
           "id": "MID-080",
           "text": "Network Request Processing Limits",
           "level": "foundational"
+        },
+        {
+          "id": "MID-088",
+          "text": "Formally Verified Parsers",
+          "level": "leading"
+        },
+        {
+          "id": "MID-089",
+          "text": "Formal Methods Verification of Critical Functionality Implementation",
+          "level": "leading"
         }
       ]
     },
     {
       "id": "TID-406",
       "text": "Unauthorized Messages or Connections",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-4111",
@@ -1898,7 +2031,7 @@
     {
       "id": "TID-407",
       "text": "Missing Message Replay Protection",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-41",
@@ -1921,7 +2054,7 @@
     {
       "id": "TID-408",
       "text": "Unencrypted Sensitive Data Communication",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-4112",
@@ -1944,7 +2077,7 @@
     {
       "id": "TID-410",
       "text": "Cryptographic Protocol Side Channel",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-4113",
@@ -1962,7 +2095,7 @@
     {
       "id": "TID-411",
       "text": "Weak/Insecure Cryptographic Protocol",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-4113",
@@ -1989,7 +2122,7 @@
     {
       "id": "TID-412",
       "text": "Network Routing Capability Abuse",
-      "category": "Networking",
+      "category": "networking",
       "properties": [
         {
           "id": "PID-42",

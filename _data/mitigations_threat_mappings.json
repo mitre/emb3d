@@ -20,7 +20,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "Faulty FW/SW Update Integrity Verification"
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
                 },
                 {
                     "id": "TID-218",
@@ -52,7 +52,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "Faulty FW/SW Update Integrity Verification"
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
                 },
                 {
                     "id": "TID-218",
@@ -80,7 +80,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "Faulty FW/SW Update Integrity Verification"
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
                 },
                 {
                     "id": "TID-218",
@@ -202,8 +202,8 @@
         },
         {
             "id": "MID-009",
-            "name": "Operating System-based Runtime Integrity Check",
-            "text": "Operating System-based Runtime Integrity Check",
+            "name": "Runtime System Integrity Checking",
+            "text": "Runtime System Integrity Checking",
             "level": "intermediate",
             "threats": [
                 {
@@ -230,8 +230,8 @@
         },
         {
             "id": "MID-010",
-            "name": "No Runtime OS Driver Load",
-            "text": "No Runtime OS Driver Load",
+            "name": "No Runtime OS Driver Loading",
+            "text": "No Runtime OS Driver Loading",
             "level": "foundational",
             "threats": [
                 {
@@ -316,7 +316,7 @@
             "threats": [
                 {
                     "id": "TID-103",
-                    "text": "Cache Timing Analysis Side Channel"
+                    "text": "Microarchitectural Side Channels"
                 },
                 {
                     "id": "TID-110",
@@ -536,7 +536,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "Faulty FW/SW Update Integrity Verification"
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
                 },
                 {
                     "id": "TID-215",
@@ -564,7 +564,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "Faulty FW/SW Update Integrity Verification"
+                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
                 },
                 {
                     "id": "TID-316",
@@ -666,8 +666,8 @@
         },
         {
             "id": "MID-033",
-            "name": "Unique Factory Preinstalled Secret Keys",
-            "text": "Unique Factory Preinstalled Secret Keys",
+            "name": "Unique and Unpredictable Factory Preinstalled Secret Keys",
+            "text": "Unique and Unpredictable Factory Preinstalled Secret Keys",
             "level": "intermediate",
             "threats": [
                 {
@@ -707,12 +707,12 @@
             "level": "foundational",
             "threats": [
                 {
-                    "id": "TID-321",
-                    "text": "HTTP Application Session Hijacking"
-                },
-                {
                     "id": "TID-408",
                     "text": "Unencrypted Sensitive Data Communication"
+                },
+                {
+                    "id": "TID-321",
+                    "text": "HTTP Application Session Hijacking"
                 }
             ]
         },
@@ -773,6 +773,10 @@
                 {
                     "id": "TID-412",
                     "text": "Network Routing Capability Abuse"
+                },
+                {
+                    "id": "TID-225",
+                    "text": "Logs can be manipulated on the device"
                 }
             ]
         },
@@ -822,10 +826,6 @@
             "text": "Device Checks Consistency Between Binary/Running Code and Textual Code",
             "level": "foundational",
             "threats": [
-                {
-                    "id": "TID-303",
-                    "text": "Excessive Trust in Offboard Management/IDE Software"
-                },
                 {
                     "id": "TID-307",
                     "text": "Device Code Representations Inconsistent"
@@ -936,7 +936,7 @@
             "threats": [
                 {
                     "id": "TID-103",
-                    "text": "Cache Timing Analysis Side Channel"
+                    "text": "Microarchitectural Side Channels"
                 }
             ]
         },
@@ -948,7 +948,7 @@
             "threats": [
                 {
                     "id": "TID-103",
-                    "text": "Cache Timing Analysis Side Channel"
+                    "text": "Microarchitectural Side Channels"
                 },
                 {
                     "id": "TID-110",
@@ -1019,16 +1019,16 @@
             "level": "intermediate",
             "threats": [
                 {
-                    "id": "TID-109",
-                    "text": "RAM Chip Contents Readout"
-                },
-                {
                     "id": "TID-106",
                     "text": "Data Bus Interception"
                 },
                 {
                     "id": "TID-108",
                     "text": "ROM/NVRAM Data Extraction or Modification"
+                },
+                {
+                    "id": "TID-109",
+                    "text": "RAM Chip Contents Readout"
                 },
                 {
                     "id": "TID-114",
@@ -1115,16 +1115,16 @@
                     "text": "Electromagnetic Analysis Side Channel"
                 },
                 {
+                    "id": "TID-318",
+                    "text": "Insecure Cryptographic Implementation"
+                },
+                {
                     "id": "TID-214",
                     "text": "Secrets Extracted from Device Root of Trust"
                 },
                 {
                     "id": "TID-317",
                     "text": "Predictable Cryptographic Key"
-                },
-                {
-                    "id": "TID-318",
-                    "text": "Insecure Cryptographic Implementation"
                 }
             ]
         },
@@ -1136,7 +1136,7 @@
             "threats": [
                 {
                     "id": "TID-103",
-                    "text": "Cache Timing Analysis Side Channel"
+                    "text": "Microarchitectural Side Channels"
                 }
             ]
         },
@@ -1332,7 +1332,7 @@
             "threats": [
                 {
                     "id": "TID-323",
-                    "text": "HTTP Path Traversal"
+                    "text": "Path Traversal"
                 }
             ]
         },
@@ -1433,6 +1433,134 @@
                 {
                     "id": "TID-412",
                     "text": "Network Routing Capability Abuse"
+                }
+            ]
+        },
+        {
+            "id": "MID-084",
+            "name": "Restrict Sensitive Data from Logs",
+            "text": "Restrict Sensitive Data from Logs",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-226",
+                    "text": "Device leaks security information in logs"
+                }
+            ]
+        },
+        {
+            "id": "MID-085",
+            "name": "Export Logs Over the Network Off of Device",
+            "text": "Export Logs Over the Network Off of Device",
+            "level": "foundational",
+            "threats": [
+                {
+                    "id": "TID-225",
+                    "text": "Logs can be manipulated on the device"
+                }
+            ]
+        },
+        {
+            "id": "MID-086",
+            "name": "Hardware Enforcement of Memory Access",
+            "text": "Hardware Enforcement of Memory Access",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-206",
+                    "text": "Memory Management Protections Subverted"
+                },
+                {
+                    "id": "TID-219",
+                    "text": "OS/Kernel Privilege Escalation"
+                },
+                {
+                    "id": "TID-327",
+                    "text": "Out of Bounds Memory Access"
+                }
+            ]
+        },
+        {
+            "id": "MID-087",
+            "name": "Utilization of Formally Verified OS (Micro-)Kernels",
+            "text": "Utilization of Formally Verified OS (Micro-)Kernels",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-204",
+                    "text": "Untrusted Programs Can Access Privileged OS Functions"
+                },
+                {
+                    "id": "TID-208",
+                    "text": "Virtual Machine Escape"
+                },
+                {
+                    "id": "TID-219",
+                    "text": "OS/Kernel Privilege Escalation"
+                }
+            ]
+        },
+        {
+            "id": "MID-088",
+            "name": "Formally Verified Parsers",
+            "text": "Formally Verified Parsers",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-309",
+                    "text": "Device Exploits Engineering Workstation"
+                },
+                {
+                    "id": "TID-326",
+                    "text": "Insecure Deserialization"
+                },
+                {
+                    "id": "TID-404",
+                    "text": "Remotely Triggerable Deadlock/DoS"
+                },
+                {
+                    "id": "TID-405",
+                    "text": "Network Stack Resource Exhaustion"
+                }
+            ]
+        },
+        {
+            "id": "MID-089",
+            "name": "Formal Methods Verification of Critical Functionality Implementation",
+            "text": "Formal Methods Verification of Critical Functionality Implementation",
+            "level": "leading",
+            "threats": [
+                {
+                    "id": "TID-202",
+                    "text": "Exploitable System Network Stack Component"
+                },
+                {
+                    "id": "TID-304",
+                    "text": "Manipulate Runtime Environment"
+                },
+                {
+                    "id": "TID-306",
+                    "text": "Sandboxed Environments Escaped"
+                },
+                {
+                    "id": "TID-326",
+                    "text": "Insecure Deserialization"
+                },
+                {
+                    "id": "TID-404",
+                    "text": "Remotely Triggerable Deadlock/DoS"
+                },
+                {
+                    "id": "TID-405",
+                    "text": "Network Stack Resource Exhaustion"
                 }
             ]
         }

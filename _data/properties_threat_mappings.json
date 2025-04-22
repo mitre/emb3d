@@ -18,7 +18,7 @@
         },
         {
           "id": "TID-103",
-          "text": "Cache Timing Analysis Side Channel"
+          "text": "Microarchitectural Side Channels"
         },
         {
           "id": "TID-105",
@@ -478,7 +478,7 @@
       "threats": [
         {
           "id": "TID-213",
-          "text": "Faulty FW/SW Update Integrity Verification"
+          "text": "FW/SW Update Integrity Shared Secrets Extraction"
         }
       ],
       "parentProp": "PID-27"
@@ -513,7 +513,7 @@
     },
     {
       "id": "PID-275",
-      "text": "Device includes  remotely-initiated firmware/software updates",
+      "text": "Device includes remotely-initiated firmware/software updates",
       "category": "System Software",
       "isparentProp": false,
       "subProps": [],
@@ -524,6 +524,24 @@
         }
       ],
       "parentProp": "PID-27"
+    },
+    {
+      "id": "PID-28",
+      "text": "Device stores logs of system events and information",
+      "category": "System Software",
+      "isparentProp": true,
+      "subProps": [],
+      "threats": [
+        {
+          "id": "TID-225",
+          "text": "Logs can be manipulated on the device"
+        },
+        {
+          "id": "TID-226",
+          "text": "Device leaks security information in logs"
+        }
+      ],
+      "parentProp": ""
     },
     {
       "id": "PID-31",
@@ -567,7 +585,7 @@
         },
         {
           "id": "TID-323",
-          "text": "HTTP Path Traversal"
+          "text": "Path Traversal"
         },
         {
           "id": "TID-324",
@@ -731,7 +749,7 @@
     },
     {
       "id": "PID-33",
-      "text": "Device includes interactive services (e.g., Telnet, SSH)",
+      "text": "Device includes interactive applications, services, or user interfaces",
       "category": "Application Software",
       "isparentProp": true,
       "subProps": [
@@ -837,6 +855,24 @@
       "parentProp": "PID-33"
     },
     {
+      "id": "PID-34",
+      "text": "Device stores logs of application events and information",
+      "category": "Application Software",
+      "isparentProp": true,
+      "subProps": [],
+      "threats": [
+        {
+          "id": "TID-225",
+          "text": "Logs can be manipulated on the device"
+        },
+        {
+          "id": "TID-226",
+          "text": "Device leaks security information in logs"
+        }
+      ],
+      "parentProp": ""
+    },
+    {
       "id": "PID-41",
       "text": "Device exposes remote network services",
       "category": "Networking",
@@ -935,10 +971,6 @@
         {
           "id": "TID-318",
           "text": "Insecure Cryptographic Implementation"
-        },
-        {
-          "id": "TID-330",
-          "text": "Cryptographic Timing Side-Channel"
         },
         {
           "id": "TID-410",
