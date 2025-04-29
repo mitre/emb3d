@@ -20,7 +20,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                    "text": "Faulty FW/SW Update Integrity Verification"
                 },
                 {
                     "id": "TID-218",
@@ -52,7 +52,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                    "text": "Faulty FW/SW Update Integrity Verification"
                 },
                 {
                     "id": "TID-218",
@@ -80,7 +80,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                    "text": "Faulty FW/SW Update Integrity Verification"
                 },
                 {
                     "id": "TID-218",
@@ -536,7 +536,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                    "text": "Faulty FW/SW Update Integrity Verification"
                 },
                 {
                     "id": "TID-215",
@@ -564,7 +564,7 @@
                 },
                 {
                     "id": "TID-213",
-                    "text": "FW/SW Update Integrity Shared Secrets Extraction"
+                    "text": "Faulty FW/SW Update Integrity Verification"
                 },
                 {
                     "id": "TID-316",

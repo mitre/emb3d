@@ -478,7 +478,7 @@
       "threats": [
         {
           "id": "TID-213",
-          "text": "FW/SW Update Integrity Shared Secrets Extraction"
+          "text": "Faulty FW/SW Update Integrity Verification"
         }
       ],
       "parentProp": "PID-27"

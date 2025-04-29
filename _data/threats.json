@@ -620,7 +620,7 @@
         },
         {
             "id": "TID-213",
-            "text": "FW/SW Update Integrity Shared Secrets Extraction",
+            "text": "Faulty FW/SW Update Integrity Verification",
             "category": "system software",
             "properties": [
                 {
