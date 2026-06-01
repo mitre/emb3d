@@ -1,10 +1,11 @@
 var threatData;
 var allThreats;
 var rows = [];
-var idFromUrl;
 var urlParams = new URLSearchParams(window.location.search);
 var categoryList = [];
 var selectedThreats = [];
+// AI-generated with Codex+GPT-5.5: prevents URL rewrites while restoring selection state.
+var isRestoringFromUrl = false;
 
 //Load the json file that contains the threat and device properties mapping
 fetch("../_data/properties_threat_mappings.json")
@@ -16,27 +17,8 @@ fetch("../_data/properties_threat_mappings.json")
   })
   .then((json) => {
     threatData = json;
-    if (urlParams.size > 0) {
-      // get clicked id from url
-      idFromUrl = urlParams.get("id");
-      var propID = document.getElementById(idFromUrl);
-      propID.checked = true;
-      id_found = false;
-      // below code is run if the parent property is selected
-      for (let i = 0; i < threatData.properties.length; i++) {
-        if (
-          threatData.properties[i].isparentProp &&
-          threatData.properties[i].id === idFromUrl
-        ) {
-          updateList(threatData.properties[i].id);
-          id_found = true;
-        }
-      }
-      // below code is run if any of the sub properties is selected
-      if (!id_found) {
-        has_parent(idFromUrl);
-      }
-    }
+    // AI-generated with Codex+GPT-5.5: restore bookmarked property selections from the URL.
+    restorePropertiesFromUrl();
   });
 
 fetch("../_data/threats.json")
@@ -87,7 +69,95 @@ function updatePropertiesNew() {
     selectedProperties = [];
   }
   propertiesDiv.innerHTML = "<ul>" + propertiesDiv_inner + "</ul>";
+  if (!isRestoringFromUrl) {
+    updateUrlFromSelection();
+  }
 }
+
+// BEGIN AI-generated with Codex+GPT-5.5:
+// Compact URL parsing and writing for property mapper selections.
+function getPropertyIdsFromUrl() {
+  var propertyIds = getPropertyIdsFromParamValues(urlParams.getAll("id"));
+
+  // Preserve links created by the earlier multi-property URL format.
+  propertyIds = propertyIds.concat(
+    getPropertyIdsFromParamValues(urlParams.getAll("pid"))
+  );
+
+  // Also accept a compact comma-separated form, if present.
+  propertyIds = propertyIds.concat(
+    getPropertyIdsFromParamValues(urlParams.getAll("ids"))
+  );
+
+  return [...new Set(propertyIds.map(normalizePropertyId).filter(Boolean))];
+}
+
+function getPropertyIdsFromParamValues(paramValues) {
+  var propertyIds = [];
+
+  for (let i = 0; i < paramValues.length; i++) {
+    propertyIds = propertyIds.concat(paramValues[i].split(","));
+  }
+
+  return propertyIds;
+}
+
+function normalizePropertyId(propertyId) {
+  var trimmedPropertyId = propertyId.trim();
+  if (!trimmedPropertyId) {
+    return "";
+  }
+
+  if (trimmedPropertyId.toUpperCase().startsWith("PID-")) {
+    return "PID-" + trimmedPropertyId.slice(4);
+  }
+
+  return "PID-" + trimmedPropertyId;
+}
+
+function getPropertyIdNumber(propertyId) {
+  return propertyId.replace(/^PID-/i, "");
+}
+
+function restorePropertiesFromUrl() {
+  var propertyIds = getPropertyIdsFromUrl();
+  if (propertyIds.length === 0) {
+    return;
+  }
+
+  isRestoringFromUrl = true;
+  for (let i = 0; i < propertyIds.length; i++) {
+    var propID = document.getElementById(propertyIds[i]);
+    if (propID) {
+      propID.checked = true;
+      has_parent(propertyIds[i]);
+      updateList(propertyIds[i]);
+    }
+  }
+  isRestoringFromUrl = false;
+  updatePropertiesNew();
+}
+
+function updateUrlFromSelection() {
+  var selectedPropertyIds = [];
+
+  for (let i = 0; i < threatData.properties.length; i++) {
+    var propID = threatData.properties[i].id;
+    var checkbox = document.getElementById(propID);
+
+    if (checkbox && checkbox.checked) {
+      selectedPropertyIds.push(propID);
+    }
+  }
+
+  var newUrl = window.location.pathname;
+  if (selectedPropertyIds.length > 0) {
+    var selectedPropertyIdNumbers = selectedPropertyIds.map(getPropertyIdNumber);
+    newUrl += "?id=" + selectedPropertyIdNumbers.join(",");
+  }
+  history.replaceState(null, "", newUrl);
+}
+// END AI-generated with Codex+GPT-5.5.
 
 function createThreatColumn() {
   dict = [];
@@ -253,12 +323,6 @@ function has_parent(child) {
 // Helps the updateList() function to accurately hide/display sub properties until their parent property is checked/unchecked
 // Depending on the selction, the updatePropertiesNew() function displays the corresponding threats
 function updateList_helper(parent, child, has_subprop) {
-  // if id is present in url then run below code
-  if (urlParams.size > 0) {
-    has_parent(parent);
-    has_subprop = true;
-    urlParams = [];
-  }
   if (has_subprop) {
     for (let i = 0; i < child.length; i++) {
       const el = document.getElementById(parent);
